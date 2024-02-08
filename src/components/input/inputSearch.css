@@ -1,0 +1,21 @@
+.search__container {
+    position: relative;
+  }
+  
+.search__input {
+    padding: 4px 0 6px 24px;
+    width: 95%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: #fff;
+    margin: 8px 10px;
+    font-size: 10px;
+}
+  
+/* .search__input::before {
+    content: url('./../img/loupe.png');
+    position: absolute;
+    left: 10px; 
+  } */
+

@@ -1,0 +1,22 @@
+.header__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+}
+
+.header__logo span {
+    font-size: 14px;
+}
+
