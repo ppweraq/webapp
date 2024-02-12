@@ -99,8 +99,18 @@ button:focus {
 border: 1px #fff solid;
 }
 
+.filter__size {
+    margin-bottom: 173px;
+
+}
+
 .input__title span {
     font-size: 8px;
+}
+
+.filter_btn_choose {
+    background-color: #1c1c1c;
+    padding: 10px;
 }
 
 .filter_btn_choose button {
@@ -111,7 +121,7 @@ border: 1px #fff solid;
     border: none;
     border-radius: 10px;
     padding: 10px;
-    margin-top: 173px;
+    /* margin-top: 173px; */
 }
 
 .filter_btn_choose button:hover {

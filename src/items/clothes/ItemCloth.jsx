@@ -5,7 +5,7 @@ const ItemCloth = ({cloth}) => {
   // console.log(el)
     return (
       <div className="content">
-        <div key={cloth.id} className="item">
+        <div key={cloth.id} className="item cloth">
           <img src={"./img/clothes/" + cloth.img} alt="a" className='img__product' />
           <div className="descr__title">
             <div className="top__title">

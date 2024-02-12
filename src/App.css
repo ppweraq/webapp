@@ -34,11 +34,8 @@ img, svg {
     color: #fff;
 }
 
-.indention {
-  content: '';
-  background-color: #fff;
-  height: 10px;
-
+header {
+  padding: 10px 8px;
 }
 
 .container {

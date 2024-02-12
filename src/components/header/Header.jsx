@@ -6,7 +6,7 @@ import './Header.css'
 const Header = () => {
     return (
         <header>
-            <div className="container">
+            {/* <div className="container"> */}
                 <div className="header__row">
                     <div className="header__logo">
                         <img src={'./img/icons/ava.png'} alt="logo" className='logo'/>
@@ -16,7 +16,7 @@ const Header = () => {
                         <img src={'./img/icons/heart.png'} alt="" className='logo'/>
                     </div>
                 </div>
-            </div>
+            {/* </div> */}
         </header>
     );
 };
