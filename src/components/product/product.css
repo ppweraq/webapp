@@ -25,19 +25,19 @@
     border-radius: 10px;
     padding: 10px;
 
-    &::-webkit-scrollbar {  
-        width: 5px; /* Ширина полосы прокрутки */
-      }
-    
-      &::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        background-color: rgba(70, 69, 75, 0.3);
-        transition: background-color 0.3s ease; /* Цвет ползунка прокрутки */
-    }
+}
+.product__detail::-webkit-scrollbar {  
+    width: 5px;
+}
 
-    &::-webkit-scrollbar-thumb:hover {
-        background-color: #6c6b70; /* Новый цвет ползунка при наведении */
-      }
+.product__detail::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(70, 69, 75, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.product__detail::-webkit-scrollbar-thumb:hover {
+    background-color: #6c6b70;
 }
 
 .product__price {

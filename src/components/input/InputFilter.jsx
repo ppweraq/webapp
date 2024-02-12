@@ -24,8 +24,8 @@ const InputFilter = () => {
                         </div>
                     </div>
                     <div className="right-side-input">
-                        <button className='btn-right'>По убыванию</button>
-                        <button className='btn-right'>По возрастанию</button>
+                        <button className='btn-filter btn-right'>По убыванию</button>
+                        <button className='btn-filter btn-right'>По возрастанию</button>
                     </div>
                 </div>
                 <div className="brand">
@@ -33,11 +33,11 @@ const InputFilter = () => {
                             Бренд
                     </div>
                     <div className="collection">
-                        <button className='brand_name'>Adidas</button>
-                        <button className='brand_name'>Burberry</button>
-                        <button className='brand_name'>Fila</button>
-                        <button className='brand_name'>Crocs</button>
-                        <button className='brand_name'>Nike</button>
+                        <button className='btn-filter brand_name'>Adidas</button>
+                        <button className='btn-filter brand_name'>Burberry</button>
+                        <button className='btn-filter brand_name'>Fila</button>
+                        <button className='btn-filter brand_name'>Crocs</button>
+                        <button className='btn-filter brand_name'>Nike</button>
 
                     </div>
                 </div>
@@ -46,11 +46,11 @@ const InputFilter = () => {
                         Цвет
                     </div>
                     <div className="collection">
-                        <button className='brand_name'>Белый</button>
-                        <button className='brand_name'>Черный</button>
-                        <button className='brand_name'>Голубой</button>
-                        <button className='brand_name'>Красный</button>
-                        <button className='brand_name'>Желтый</button>
+                        <button className='btn-filter brand_name'>Белый</button>
+                        <button className='btn-filter brand_name'>Черный</button>
+                        <button className='btn-filter brand_name'>Голубой</button>
+                        <button className='btn-filter brand_name'>Красный</button>
+                        <button className='btn-filter brand_name'>Желтый</button>
 
                     </div>
                 </div>
@@ -59,11 +59,11 @@ const InputFilter = () => {
                         Размер <span>см</span>
                     </div>
                     <div className="collection">
-                        <button className='button'>23</button>
-                        <button className='button'>24</button>
-                        <button className='button'>25</button>
-                        <button className='button'>26</button>
-                        <button className='button'>27</button>
+                        <button className='btn-filter button'>23</button>
+                        <button className='btn-filter button'>24</button>
+                        <button className='btn-filter button'>25</button>
+                        <button className='btn-filter button'>26</button>
+                        <button className='btn-filter button'>27</button>
                     </div>
                 </div>
 

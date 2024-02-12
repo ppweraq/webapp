@@ -1,16 +1,10 @@
 import React, {useState} from 'react';
 import './product.css'
+import LikeBtn from '../likeButton/LikeBtn';
 // import heartImg from './img/icons/heart.png'
 // import heartImgOverlay from './img/icons/overlay_heart.png'
 
 const Product = () => {
-
-    const [liked, setLiked] = useState(false);
-
-  const toggleLike = () => {
-    setLiked(!liked);
-  }
-
     return (
         <div>
             <div className='product__head'>Nike Dunk Low Premium Tartan </div>
@@ -27,9 +21,7 @@ const Product = () => {
                                 minimumFractionDigits: 0,
                                 }).format(19600)}
                             </p>
-                            <button>
-                                <img onClick={toggleLike} src={liked ? './img/icons/overlay_heart.png' : './img/icons/heart.png'} alt="like"/>
-                            </button>
+                                <LikeBtn/>
                         </div>
 
                         <div className="product__size-title">

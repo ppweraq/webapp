@@ -13,6 +13,7 @@
     border-radius: 10px;
     padding: 5px;
     margin: 5px 0;
+    /* width: 331px; */
 
 }
 
@@ -68,6 +69,31 @@ input[type="text"]::placeholder {
     color: #fff;
    }
 
+.collection {
+
+    white-space: nowrap;
+    overflow-x: scroll;
+    max-width: 320px;
+    padding: 2px;
+    /* scrollbar-width: thin; */
+
+   
+    
+    
+}
+.collection::-webkit-scrollbar-thumb:hover {
+    background-color: #6c6b70;
+}
+.collection::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgba(70, 69, 75, 0.3);
+        transition: background-color 0.3s ease;
+    }
+.collection::-webkit-scrollbar {  
+        scrollbar-width: thin;
+    }
+
+
 .collection button {
     margin-left: 10px;
     right: 10px;
@@ -92,7 +118,7 @@ input[type="text"]::placeholder {
     display: inline-block;
 }
 
-button:focus {
+.btn-filter:focus {
     border: 1px #fff solid;
 }
 .button.selected {

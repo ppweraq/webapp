@@ -1,5 +1,5 @@
+import LikeBtn from '../../components/likeButton/LikeBtn'
 import '../item.css'
-// import heartImg from './img/icons/heart.png'
 
 const ItemCloth = ({cloth}) => {
   // console.log(el)
@@ -16,9 +16,7 @@ const ItemCloth = ({cloth}) => {
                     minimumFractionDigits: 0,
                   }).format(cloth.price)}
               </b>
-              <a href="http://">
-                <img src={'./img/icons.heart.png'} alt="" className='like__img' />
-              </a>
+                  <LikeBtn/>
             </div>
               <div className="title__name">
                   {cloth.title}

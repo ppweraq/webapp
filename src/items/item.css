@@ -10,8 +10,8 @@ main {
     max-height: 457px;
     &::-webkit-scrollbar {  
         width: 5px; /* Ширина полосы прокрутки */
-      }
-    
+        }
+
     &::-webkit-scrollbar-thumb {
         border-radius: 10px;
         background-color: rgba(70, 69, 75, 0.3);
@@ -20,7 +20,7 @@ main {
 
     &::-webkit-scrollbar-thumb:hover {
         background-color: #6c6b70; /* Новый цвет ползунка при наведении */
-      }
+        }
 }
 
 
@@ -66,18 +66,20 @@ main {
     align-items: center;
     justify-content: space-between;
 }
+.top__title button {
+    background-color: #1C1C1C;
+    border: none;
+    width: 10px;
+    height: 11px;
+    margin-right: 10px;
+    margin-top: 5px;
+    outline: none;
+}
 
 .item__price {
     font-size: 14px;
     margin-left: 8px;
     margin-top: 4.3px;
-}
-
-a .like__img  {
-    width: 10px;
-    height: 9px;
-    margin-right: 10px;
-    margin-top: 5px;
 }
 
 .title__name {
@@ -91,8 +93,8 @@ a .like__img  {
     background-color: #000;
     border: none;
     border-radius: 20px;    
-    padding: 3px 50px;
-    margin: 4px 5px;
+    padding: 0 50px 5px;
+    margin: 8px 6px;
 }
 
 .btn__buy:hover {
@@ -104,6 +106,7 @@ a .like__img  {
     text-decoration: none;
     font-size: 10px;
     cursor: pointer;
+    padding-bottom: 3px;
 }
 
 

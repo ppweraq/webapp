@@ -1,16 +1,10 @@
+import LikeBtn from '../../components/likeButton/LikeBtn';
 import '../item.css'
 // import heartImg from './img/icons/heart.png
 import { useState } from 'react';
 
 
 const ItemSneaker = ({sneaker}) => {
-
-  const [liked, setLiked] = useState(false);
-
-  const toggleLike = () => {
-    setLiked(!liked);
-  } 
-
     return (
         <div className="content">
           <div key={sneaker.id} className="item">
@@ -24,9 +18,7 @@ const ItemSneaker = ({sneaker}) => {
                       minimumFractionDigits: 0,
                     }).format(sneaker.price)}
                 </b>
-                <a href="#!">
-                  <img onClick={toggleLike} src={liked ? './img/icons/overlay_heart.png' : './img/icons/heart.png'} alt="" className='like__img' />
-                </a>
+                    <LikeBtn/>
               </div>
                 <div className="title__name">
                     {sneaker.title}
