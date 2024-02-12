@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './product.css'
-import heartImg from '../img/heart.png'
-import heartImgOverlay from '../img/overlay_heart.png'
+// import heartImg from './img/icons/heart.png'
+// import heartImgOverlay from './img/icons/overlay_heart.png'
 
 const Product = () => {
 
@@ -28,7 +28,7 @@ const Product = () => {
                                 }).format(19600)}
                             </p>
                             <button>
-                                <img onClick={toggleLike} src={liked ? heartImg : heartImgOverlay} alt="like"/>
+                                <img onClick={toggleLike} src={liked ? './img/icons/overlay_heart.png' : './img/icons/heart.png'} alt="like"/>
                             </button>
                         </div>
 
@@ -69,10 +69,10 @@ const Product = () => {
                             <p>Dunk Low Premium “Tartan Plaid” – заниженный релиз от всемирно известного бренда, выполнен из кожи белого цвета. Текстильные вставки из клетчатого материала в зеленом и красном колорвее придают модели стильный и необычный образ.</p>
                         </div>
                         
-                        <div className="product__btn">
-                            <button>Оплатить</button>
-                        </div>
                     </div>
+                </div>
+                <div className="product__btn">
+                    <button>Оплатить</button>
                 </div>
         </div>
     );

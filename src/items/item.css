@@ -1,16 +1,17 @@
 main {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 145px);
+    grid-template-rows: repeat(3, 140px);
 
+    gap: 10px;
+    justify-content: center;
 }
+
+
 
 .item {
     width: 145px;
     height: 140px;
-    column-gap: 10px;
-    margin-bottom: 10px;
     background: #1C1C1C;
     border-radius: 27px;
     overflow: hidden;

@@ -1,10 +1,10 @@
 import '../item.css'
-import heartImg from '../../components/img/heart.png'
+// import heartImg from './img/icons/heart.png'
 
 const ItemCloth = ({cloth}) => {
   // console.log(el)
     return (
-      <div className="container">
+      <div className="content">
         <div key={cloth.id} className="item">
           <img src={"./img/clothes/" + cloth.img} alt="a" className='img__product' />
           <div className="descr__title">
@@ -17,7 +17,7 @@ const ItemCloth = ({cloth}) => {
                   }).format(cloth.price)}
               </b>
               <a href="http://">
-                <img src={heartImg} alt="" className='like__img' />
+                <img src={'./img/icons.heart.png'} alt="" className='like__img' />
               </a>
             </div>
               <div className="title__name">

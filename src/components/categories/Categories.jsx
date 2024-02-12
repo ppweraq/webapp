@@ -1,6 +1,6 @@
 import React from 'react';
 import './Categories.css'
-import filterImg from './../img/filter.png'
+// import filterImg from './img/icons/filter.png'
 
 const Categories = () => {
     return (
@@ -18,7 +18,7 @@ const Categories = () => {
                     Кроссовки
                 </div>
                 <div className="filter">
-                    <img src={filterImg} alt="" />
+                    <img src={'./img/icons/filter.png'} alt="" />
                 </div>
             </div>
         </div>

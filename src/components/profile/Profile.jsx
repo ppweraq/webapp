@@ -1,6 +1,6 @@
 import React from 'react';
 import './profile.css'
-import profileImg from './../img/ava.png'
+// import profileImg from './img/icons/ava.png'
 
 const Profile = () => {
     return (
@@ -12,7 +12,7 @@ const Profile = () => {
 
                 <div className="profile__title">
                     <div className="profile__img">
-                        <img src={profileImg} alt="" />
+                        <img src={'./img/icons/ava.png'} alt="" />
                     </div>
                     <div className="profile__name">
                     |Alexon|

@@ -7,7 +7,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   width: 340px;
-  /* height: 570px; */
+  height: 570px;
 }
 
 aside, nav, footer, header, section, main {
@@ -39,4 +39,8 @@ img, svg {
   background-color: #fff;
   height: 10px;
 
+}
+
+.container {
+  padding: 3px 10px 3px 10px;
 }
