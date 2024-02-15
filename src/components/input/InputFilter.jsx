@@ -1,10 +1,12 @@
 import React from 'react';
 import './inputFilter.css'
+import BackBtn from '../Button/BackBtn';
 
 const InputFilter = () => {
 
     return (
         <div>
+            <BackBtn/>
             <header className="head__title">
                 Фильтр
             </header>

@@ -1,25 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Categories.css'
-// import filterImg from './img/icons/filter.png'
+import { Link, NavLink } from 'react-router-dom';
 
 const Categories = () => {
+
+    const [name, setName] = useState(true);
+    const reName = () => setName(!name)
+
     return (
         <div>
             <div className="categories">
-                <div className="categories__sneaker">
-                    Кроссовки
-                </div>
-                <div className="categories__clothes">
+                <NavLink to='/' onClick={reName} className="categories__item" >
+                    Кроссовка
+                </NavLink>
+                <NavLink to='/clothes' onClick={reName} className="categories__item">
                     Одежда
-                </div>
+                </NavLink>
+  
             </div>
             <div className="categories__filter">
                 <div className="categ__name">
-                    Кроссовки
+                    <div >{name ? 'Кроссовка' : 'Одежда'}</div>
                 </div>
-                <div className="filter">
+                <Link to='/filter' className="filter">
                     <img src={'./img/icons/filter.png'} alt="" />
-                </div>
+                </Link>
             </div>
         </div>
     );

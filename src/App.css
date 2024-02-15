@@ -8,6 +8,8 @@ body {
   font-family: 'Roboto', sans-serif;
   width: 340px;
   height: 570px;
+  background-color: #000;
+  color: #fff;
 }
 
 aside, nav, footer, header, section, main {
@@ -29,10 +31,6 @@ img, svg {
     align-items: center;
 }
 
-.App {
-    background-color: #000;
-    color: #fff;
-}
 
 header {
   padding: 10px 8px;
@@ -40,4 +38,9 @@ header {
 
 .container {
   padding: 3px 10px 3px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }

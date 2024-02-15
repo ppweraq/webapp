@@ -1,0 +1,10 @@
+.back__arrows {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    background-color: #000;
+  }

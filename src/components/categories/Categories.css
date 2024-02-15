@@ -7,22 +7,16 @@
     letter-spacing: 0.03em;
     padding: 0 10px;
     margin: 15px 0;
+
 }
 
-.categories__sneaker {
-    font-weight: bold;
+.categories__item {
     width: 100%;
-    border-bottom: 1px solid #fff;
     padding-bottom: 3px;
-
 }
-.categories__clothes {
-    margin: 0 auto;
-    border: 1px;
-    width: 100%;
-    
+.categories__item:hover {
+    color: #bbbaba;
 }
-
 .categories__filter {
     display: flex;
     justify-content: space-between;
@@ -36,4 +30,19 @@
     padding-left: 5px;
     font-weight: bold;
     font-size: 16px;
+}
+
+.active {
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    transition: border-bottom 0.3s ease;
+}
+.filter {
+    height: 18px;
+    width: 18px;
+}
+
+.filter img:hover {
+    transform: scale(1.05);
+
 }

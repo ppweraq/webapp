@@ -87,7 +87,7 @@ input[type="text"]::placeholder {
 .collection::-webkit-scrollbar-thumb {
         border-radius: 10px;
         background-color: rgba(70, 69, 75, 0.3);
-        transition: background-color 0.3s ease;
+        transition: background-color 2s ease;
     }
 .collection::-webkit-scrollbar {  
         scrollbar-width: thin;

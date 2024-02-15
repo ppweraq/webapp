@@ -1,12 +1,26 @@
-import ItemSneaker from './ItemSneaker'
+import ItemProduct from '../ItemProduct';
 import '../item.css'
-import { sneakers } from '../../sneakers.data';
+import { useEffect, useState } from 'react';
 
 const ItemsSneakers = () => {
+  const [items, setItems] = useState([])
+
+  useEffect(() => {
+
+    const fetchData = async () => {
+      const response = await fetch ('https://65cc43dcdd519126b83e2b68.mockapi.io/product')
+      const data = await response.json()
+
+      setItems(data)
+    }
+
+    fetchData()
+  }, [])
+
     return (
         <main>
-          {sneakers.length ? (
-            sneakers.map(sneaker => <ItemSneaker key= {sneaker.id}  sneaker = {sneaker}/>)
+          {items.length ? (
+            items.map(item => <ItemProduct key= {item.id}  item = {item}/>)
           ) : (
             <p>no sneakers available</p>
           )}

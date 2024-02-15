@@ -1,10 +1,15 @@
 import React from 'react';
 import './profile.css'
-// import profileImg from './img/icons/ava.png'
+import { Link } from 'react-router-dom';
 
 const Profile = () => {
     return (
         <div>
+            <Link to='/' className='back__arrows'>
+                <img src="./img/icons/back.png" alt="back" className='back__arrows' />
+                Назад
+            </Link>
+
             <header className='profile__head'>
                 Профиль
             </header>

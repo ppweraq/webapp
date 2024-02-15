@@ -1,34 +1,31 @@
 import React from 'react';
 import './App.css'
-import Header from './components/header/Header';
 import ItemsSneakers from './items/sneaker/ItemsSneakers';
 import ItemsClothes from './items/clothes/ItemsClothes';
-import InputSearch from './components/input/InputSearch';
-import Categories from './components/categories/Categories';
-import InputFilter from './components/input/InputFilter';
+import { Route, Routes } from 'react-router-dom';
+import AppRoutes from './components/routes/AppRoutes';
 import Profile from './components/profile/Profile';
-import Product from './components/product/Product'
+import InputFilter from './components/input/InputFilter';
+import Product from './items/product/Product';
 
 
 function App () {
 
     return (
       <div className="App">
-        <Header/>
-        <InputSearch/>
-        <Categories/>
-        <ItemsSneakers />
+          <Routes>
+        
+            <Route path='/' element={<AppRoutes/>}>
+              <Route index element={<ItemsSneakers/>}/>
+              <Route path='clothes' element={<ItemsClothes />}/>
 
-        <Header/>
-        <InputSearch/>
-        <Categories/>
-        <ItemsClothes />
+            </Route>
 
-        <InputFilter/>
 
-        <Profile/>
-
-        <Product />
+            <Route path='profile' element={<Profile/>}/>
+          <Route path='filter' element={<InputFilter/>}/>
+          <Route path='product/:id' element={<Product/>}/>
+          </Routes>
       </div>
     );
 }

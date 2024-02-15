@@ -16,7 +16,10 @@
     width: 25px;
     height: 25px;
 }
+.logo:hover {
+    transform: scale(1.05);
 
+}
 .header__logo span {
     font-size: 14px;
 }

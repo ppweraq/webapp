@@ -1,7 +1,7 @@
 .product__head {
     position: relative;
     padding: 20px 10px;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     font-weight: bold;
     margin-top: 15px;
@@ -84,10 +84,12 @@
     display: flex;
     flex-wrap: wrap;
     border-bottom: 1px #fff solid;
-    margin-bottom: 10 px;
+    padding-bottom : 10px;
 }
 
-.product__sizes ul {
+.product__sizes button {
+    color: #fff;
+    background-color: #1c1c1c;
     font-size: 10px;
     margin: 4px 4px 0 0;
     text-align: center;
@@ -95,7 +97,13 @@
     padding: 5px;
     border: 1px #000 solid;
     border-radius: 8px;
+}
+.product__sizes button:hover{
+    border: 1px #fff solid;
+}
 
+.product__sizes button:focus{
+    border: 1px #fff solid;
 }
 .product__nav {
     display: flex;

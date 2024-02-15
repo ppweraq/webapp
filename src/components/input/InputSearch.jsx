@@ -4,7 +4,8 @@ import './inputSearch.css'
 const InputSearch = () => {    
     return (
         <div className='search'>
-            <input type="text" className='search__input' placeholder='Поиск'/>
+            {/* <img src="./img/icons/loupe.png" alt="search" /> */}
+            <input placeholder='Поиск' type="text"  className='search__input'/>
         </div> 
     );
 };

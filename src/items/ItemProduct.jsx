@@ -1,14 +1,15 @@
-import LikeBtn from '../../components/likeButton/LikeBtn';
-import '../item.css'
-// import heartImg from './img/icons/heart.png
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import LikeBtn from '../components/Button/LikeBtn';
+import './item.css'
 
 
-const ItemSneaker = ({sneaker}) => {
+const ItemProduct = ({item}) => {
+
+  
     return (
         <div className="content">
-          <div key={sneaker.id} className="item">
-            <img src={"./img/sneaker/" + sneaker.img} alt="a" className='img__product' />
+          <div key={item.id} className="item">
+            <img src={"./img/" + item.img} alt="a" className='img__product' />
             <div className="descr__title">
               <div className="top__title">
                 <b className="item__price">
@@ -16,15 +17,15 @@ const ItemSneaker = ({sneaker}) => {
                       style: 'currency',
                       currency: 'RUB',
                       minimumFractionDigits: 0,
-                    }).format(sneaker.price)}
+                    }).format(item.price)}
                 </b>
                     <LikeBtn/>
               </div>
                 <div className="title__name">
-                    {sneaker.title}
+                    {item.title}
                 </div>
                 <div className="btn__buy">
-                  <a href="#!" className='item__btn'>Купить</a>
+                  <Link to={`/product/${item.id}`}  className='item__btn'>Купить</Link>
                 </div>
             </div>
           </div>
@@ -32,4 +33,4 @@ const ItemSneaker = ({sneaker}) => {
     )
 }
 
-export default ItemSneaker
+export default ItemProduct
